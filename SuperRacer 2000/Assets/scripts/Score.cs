@@ -17,6 +17,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         currenPosition = player.position.z;
-        scoreText.text = Math.Floor(Math.Abs(playerStart - currenPosition)).ToString();
+        double score = Math.Abs(playerStart - currenPosition) / 10;
+        scoreText.text = Math.Floor(score).ToString();
     }
 }
