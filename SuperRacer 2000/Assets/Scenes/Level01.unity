@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5ad0938afc3355a469f897ebf43e9edc,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -279,22 +280,22 @@ PrefabInstance:
     - target: {fileID: 3137035542956557921, guid: 1bea980dd37182c4b812037ef48a746c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -74.7
+      value: -74.70001
       objectReference: {fileID: 0}
     - target: {fileID: 3137035542956557921, guid: 1bea980dd37182c4b812037ef48a746c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3137035542956557921, guid: 1bea980dd37182c4b812037ef48a746c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3137035542956557921, guid: 1bea980dd37182c4b812037ef48a746c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3137035542956557921, guid: 1bea980dd37182c4b812037ef48a746c,
         type: 3}
@@ -753,8 +754,9 @@ GameObject:
   - component: {fileID: 656226084}
   - component: {fileID: 656226083}
   - component: {fileID: 656226082}
+  - component: {fileID: 656226085}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,6 +810,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656226085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656226081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb22798535a7b34c854d6c6cc9449b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.6
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1067,7 @@ GameObject:
   - component: {fileID: 788391625}
   - component: {fileID: 788391629}
   - component: {fileID: 788391630}
+  - component: {fileID: 788391631}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1168,6 +1184,19 @@ MonoBehaviour:
   left: 0
   right: 0
   up: 0
+--- !u!114 &788391631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788391624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b15264a7580d144b9f6c269a8b8a1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 788391630}
 --- !u!1 &895331323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,8 +1328,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.6009701, g: 0.63605374, b: 0.6886792, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -31,5 +31,10 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(0, 0, forwardForce, ForceMode.Acceleration);
         }
         Debug.Log(rb.velocity);
+
+        if(rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
