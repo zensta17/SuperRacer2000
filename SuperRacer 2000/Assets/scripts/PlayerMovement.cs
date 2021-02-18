@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,11 +30,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0, 0, forwardForce, ForceMode.Acceleration);
         }
-        Debug.Log(rb.velocity);
 
         if(rb.position.y < -1f)
         {
             FindObjectOfType<GameManager>().EndGame();
+        }
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MenuScene");
         }
     }
 }

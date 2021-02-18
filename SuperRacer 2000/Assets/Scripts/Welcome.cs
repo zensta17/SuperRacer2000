@@ -16,5 +16,10 @@ public class Welcome : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+
+    public void Shop()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
 }
 
