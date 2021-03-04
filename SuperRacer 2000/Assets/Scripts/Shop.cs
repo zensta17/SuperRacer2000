@@ -1,16 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
+    public static double coins;
+    public Text CoinsAnzahl;
+    void Start()
+    {
+        //Muss noch verbessert werden (try catch muss weg)
+        try
+        {
+            CoinsAnzahl.text = Math.Truncate(coins).ToString();
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
     public void Quit()
     {
-        
         Debug.Log("moin aus quit");
         SceneManager.LoadScene("MenuScene");
-
     }
 
     public void ButtonRed()
@@ -32,8 +44,5 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Auswahl: Cyan");
     }
-
-
-
 }
 

@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ca2ba4ff6f1d244b4505c3828f8a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Text_CoinsAnzahl: {fileID: 0}
 --- !u!114 &58287574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,6 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ca2ba4ff6f1d244b4505c3828f8a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Text_CoinsAnzahl: {fileID: 0}
 --- !u!114 &1653983912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,7 +1272,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1653983911}
-        m_MethodName: Shop
+        m_MethodName: ShopScript
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
