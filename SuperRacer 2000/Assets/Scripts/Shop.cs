@@ -9,15 +9,9 @@ public class Shop : MonoBehaviour
     public Text CoinsAnzahl;
     void Start()
     {
-        //Muss noch verbessert werden (try catch muss weg)
-        try
-        {
+     
             CoinsAnzahl.text = Math.Truncate(coins).ToString();
-        }
-        catch(Exception e)
-        {
-
-        }
+     
     }
     public void Quit()
     {
