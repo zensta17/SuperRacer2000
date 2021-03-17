@@ -14,6 +14,19 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Debug.Log("Game Over");
             Shop.coins += Score.score / 5;
+
+            PlayerData data = SaveSystem.LoadPlayer();
+            if(Score.score > data.score)
+            {
+                PlayerData d = new PlayerData(Shop.coins, Score.score);
+                SaveSystem.SavePlayer(d);
+            }
+            else
+            {
+                PlayerData d = new PlayerData(Shop.coins, data.score);
+                SaveSystem.SavePlayer(d);
+            }
+
             Invoke("Restart",delay);
         }
     }
