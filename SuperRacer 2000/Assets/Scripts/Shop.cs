@@ -18,8 +18,9 @@ public class Shop : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(coins);
-        CoinsAnzahl.text = Math.Truncate(coins).ToString();
+        PlayerData data = SaveSystem.LoadPlayer();
+        coins = data.coins;
+        CoinsAnzahl.text = Math.Truncate(data.coins).ToString();
     }
     public void Quit()
     {
