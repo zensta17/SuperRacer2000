@@ -310,6 +310,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
+  redColorBought: 0
+  blueColorBought: 0
+  magentaColorBought: 0
+  cyanColorBought: 0
+  kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &600854474
 MonoBehaviour:
@@ -1015,6 +1021,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Material: {fileID: 0}
+  redColorBought: 0
+  blueColorBought: 0
+  magentaColorBought: 0
+  cyanColorBought: 0
+  kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!1 &1228101595
 GameObject:
@@ -1101,7 +1113,7 @@ GameObject:
   - component: {fileID: 1247350385}
   - component: {fileID: 1247350384}
   m_Layer: 5
-  m_Name: Button_Pink_Cube
+  m_Name: Button_Magenta_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1187,7 +1199,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2085232415}
-        m_MethodName: ButtonPink
+        m_MethodName: ButtonMagenta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2262,6 +2274,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Material: {fileID: 0}
+  redColorBought: 0
+  blueColorBought: 0
+  magentaColorBought: 0
+  cyanColorBought: 0
+  kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &1927557318
 MonoBehaviour:
@@ -2499,6 +2517,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
+  redColorBought: 0
+  blueColorBought: 0
+  magentaColorBought: 0
+  cyanColorBought: 0
+  kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &2085232416
 MonoBehaviour:
