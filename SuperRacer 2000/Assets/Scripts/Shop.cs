@@ -7,10 +7,7 @@ public class Shop : MonoBehaviour
 {
     [SerializeField] public Material Material;
 
-    public bool redColorBought = false;
-    public bool blueColorBought = false;
-    public bool magentaColorBought = false;
-    public bool cyanColorBought = false;
+    
 
     public int kosten = 5;
 
@@ -33,50 +30,60 @@ public class Shop : MonoBehaviour
     public void ButtonRed()
     {
         Debug.Log("Auswahl: Rot");
+      
 
-        if ((coins >= kosten) && (redColorBought == false))
+        if (coins >= kosten)
         {
             Material.color = Color.red;
             coins = coins - kosten;
             CoinsAnzahl.text = Math.Truncate(coins).ToString();
-            redColorBought = true;
-
         }
+
+       
     }
+
 
     public void ButtonBlue()
     {
         Debug.Log("Auswahl: Blau");
+       
 
-        if ((coins >= kosten) && (blueColorBought == false))
+        if (coins >= kosten)
         {
             Material.color = Color.blue;
             coins = coins - kosten;
-            CoinsAnzahl.text = Math.Truncate(coins).ToString();
-            blueColorBought = true;
-        }
+            CoinsAnzahl.text = Math.Truncate(coins).ToString(); 
+        } 
     }
+
 
     public void ButtonMagenta()
     {
         Debug.Log("Auswahl: Magenta");
-        if ((coins >= kosten) && (magentaColorBought == false))
+        
+
+        if (coins >= kosten)
         {
             Material.color = Color.magenta;
             coins = coins - kosten;
             CoinsAnzahl.text = Math.Truncate(coins).ToString();
-            magentaColorBought = true;
+            
         }
+
+      
     }
+
     public void ButtonCyan()
     {
         Debug.Log("Auswahl: Cyan");
-        if ((coins >= kosten) && (cyanColorBought == false))
+        
+
+        if (coins >= kosten)
         {
             Material.color = Color.cyan;
             coins = coins - kosten;
             CoinsAnzahl.text = Math.Truncate(coins).ToString();
-            cyanColorBought = true;
+           
         }
     }
 }
