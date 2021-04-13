@@ -7,11 +7,7 @@ public class Shop : MonoBehaviour
 {
     [SerializeField] public Material Material;
 
-    
-
     public int kosten = 5;
-
-
 
     public static double coins;
     public Text CoinsAnzahl;

@@ -29,5 +29,11 @@ public class Welcome : MonoBehaviour
     {
         SceneManager.LoadScene("ShopScene");
     }
+
+
+    public void SettingsScript()
+    {
+        SceneManager.LoadScene("SettingsScene");
+    }
 }
 

@@ -311,10 +311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
-  redColorBought: 0
-  blueColorBought: 0
-  magentaColorBought: 0
-  cyanColorBought: 0
   kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &600854474
@@ -1021,11 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material: {fileID: 0}
-  redColorBought: 0
-  blueColorBought: 0
-  magentaColorBought: 0
-  cyanColorBought: 0
+  Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
   kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!1 &1228101595
@@ -1329,7 +1321,7 @@ GameObject:
   - component: {fileID: 1639496939}
   - component: {fileID: 1639496938}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_SuperRacer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2018,7 +2010,7 @@ GameObject:
   - component: {fileID: 1920465420}
   - component: {fileID: 1920465419}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Text_Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2274,11 +2266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb82897d353461d4ea6d910bc231a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material: {fileID: 0}
-  redColorBought: 0
-  blueColorBought: 0
-  magentaColorBought: 0
-  cyanColorBought: 0
+  Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
   kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &1927557318
@@ -2518,10 +2506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Material: {fileID: 2100000, guid: 57e6ca19f34801a409937662946e0c76, type: 2}
-  redColorBought: 0
-  blueColorBought: 0
-  magentaColorBought: 0
-  cyanColorBought: 0
   kosten: 5
   CoinsAnzahl: {fileID: 1176484906}
 --- !u!114 &2085232416
